@@ -14,10 +14,11 @@ public class Main {
             System.out.println("elija una opcion: ");
             System.out.println("""
                     1- sumar.
-                    2- restar-
-                    3- multiplicar.
-                    4- mostrar la tabla de un numero.
-                    5- salir.    
+                    2- restar.
+                    3- dividir.
+                    4- multiplicar.
+                    5- mostrar la tabla de un numero.
+                    6- salir.    
                     """);
             int opcion = teclado.nextInt();
             switch (opcion){
@@ -30,14 +31,18 @@ public class Main {
                     restar.numeros();
                     break;
                 case 3:
+                    Dividir dividir = new Dividir();
+                    dividir.numeros();
+                    break;
+                case 4:
                     Multiplicar multiplicando = new Multiplicar();
                     multiplicando.numeros();
                     break;
-                case 4:
+                case 5:
                     TablaMultiplicar tabla = new TablaMultiplicar();
                     tabla.numeros();
                     break;
-                case 5:
+                case 6:
                     System.out.printf("gracias por usar nuestros servicios %nhasta pronto.");
                     bandera = true;
             }
